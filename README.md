@@ -21,11 +21,7 @@
 ### Cluster
 
 We'll start by setting up our cluster with the environment and compute configurations.
-
-<details>
-  <summary>Local</summary><br>
-  Your personal laptop (Window) will act as the cluster, where one CPU will be the head node and some of the remaining CPU will be the worker nodes.
-</details>
+Your personal laptop (Window) will act as the cluster, where one CPU will be the head node and some of the remaining CPU will be the worker nodes.
 
 ### Git setup
 
@@ -46,9 +42,6 @@ GITHUB_USERNAME="CHANGE_THIS_TO_YOUR_USERNAME"  # ← CHANGE THIS
 
 ### Virtual environment
 
-<details>
-  <summary>Local</summary><br>
-
 ```bash
 python -m venv venv  # recommend using Python 3.10
 venv\Scripts\activate
@@ -59,7 +52,6 @@ pre-commit install
 pre-commit autoupdate
 ```
 
-</details>
 ```
 **Note**: Change the `--num-workers`, `--cpu-per-worker`, and `--gpu-per-worker` input argument values below based on your system's resources.
 ```
@@ -80,9 +72,6 @@ mlflow server -h 127.0.0.1 -p 8080 --backend-store-uri $MODEL_REGISTRY
 (mlflow server -h 127.0.0.1 -p 8080 --backend-store-uri file:///D:/Me-hi/20241/Made-With-ML/efs/shared_storage/madewithml/QuocHieu59/mlflow)
 ```
 
-<details>
-  <summary>Local</summary><br>
-
 Click to <a href="http://localhost:8080/" target="_blank">http://localhost:8080/</a> to view your MLflow dashboard.
 
 ### Evaluation
@@ -100,9 +89,6 @@ python madewithml/predict.py predict --title "Transfer learning with transformer
 
 ### Serving
 
-<details>
-  <summary>Local</summary><br>
-
 ```bash
 # Set up
 python madewithml/serve.py
@@ -113,8 +99,6 @@ Once the application is running, we can use it via cURL, Python, Postmans
 ```bash
 Ctrl + C  # shutdown server
 ```
-
-</details>
 
 ### Test case
 
