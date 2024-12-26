@@ -2,7 +2,6 @@ import argparse
 import os
 from http import HTTPStatus
 from typing import Dict
-import numpy as np
 
 import ray
 from fastapi import FastAPI

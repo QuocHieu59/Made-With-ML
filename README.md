@@ -1,5 +1,5 @@
 <div align="center">
-<h1><img width="30" src="https://madewithml.com/static/images/rounded_logo.png">&nbsp;<a href="https://madewithml.com/">Made With ML</a></h1>
+<h1><img width="30" src="https://madewithml.com/static/images/rounded_logo.png">&nbsp;<a href="https://madewithml.com/">MLOPS</a></h1>
 
 </div>
 
@@ -14,6 +14,7 @@
 - **MLflow**: Experiment tracking.
 - **Ray tune**: Hyperparameter tuning.
 - **Git**:Code version management.
+- **Docker**: Application packaging
 - **Github actions**: CI/CD.
 
 ## Set up
@@ -103,8 +104,6 @@ Ctrl + C  # shutdown server
 ### Test case
 
 ```bash
-# Code
-python -m pytest tests/code --verbose --disable-warnings >test_results/pytest_results_code.txt
 
 # Data
 pytest --dataset-loc=$env:DATASET_LOC tests/data --verbose --disable-warnings >test_results/pytest_results_data.txt
@@ -112,6 +111,8 @@ pytest --dataset-loc=$env:DATASET_LOC tests/data --verbose --disable-warnings >t
 # Model
 pytest tests/model --verbose --disable-warnings >test_results/pytest_results_model.txt
 
+# Code
+python -m pytest tests/code --verbose --disable-warnings >test_results/pytest_results_code.txt
 ```
 
 ### CI/CD
