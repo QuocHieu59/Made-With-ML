@@ -1,6 +1,6 @@
 outs:
-- md5: bac231ac198be37d246f4c4150892568.dir
-  size: 320469
+- md5: 5c2329a7d2f257d6fcc8acab7d2a7f3d.dir
+  size: 313189
   nfiles: 4
   hash: md5
   path: datadvc

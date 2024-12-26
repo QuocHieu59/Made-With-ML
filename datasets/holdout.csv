@@ -152,46 +152,4 @@ image-level annotations",computer-vision
 1858,2020-07-14 03:30:14,QSVM,Quantum SVM for sentiment analysis,natural-language-processing
 1866,2020-07-14 22:58:15,PYthon Automated Term Extraction,"Term extraction algorithms such as C-Value, Basic, Combo Basic, Weirdness and Term Extractor using spaCy POS tagging.",natural-language-processing
 1870,2020-07-15 20:38:36,Interpretability and Analysis of Models for NLP,An in-depth look at interpretability and analysis of models for NLP (ACL 2020).,natural-language-processing
-1888,2020-07-17 16:53:37,Monitoring Machine Learning Models in Production,Once you have deployed your machine learning model to production it rapidly becomes apparent that the work is not over.,mlops
-1901,2020-07-19 08:31:43,Quora Question Pair Similarity,"Identify which questions asked on Quora are duplicates of questions that have already been asked. Using Text features, classifying them as duplicates or not.
 
-",natural-language-processing
-1905,2020-07-19 14:51:57,PyTorch CNN Trainer,A simple package to fine-tune CNNs from torchvision and Pytorch Image models by Ross Wightman.,computer-vision
-1934,2020-07-21 01:47:01,Graphein,Protein Graph Library,other
-1935,2020-07-21 04:44:52,Integrated Gradients in TensorFlow 2,"In this tutorial, you will walk through an implementation of IG step-by-step in TensorFlow 2 to understand the pixel feature importances of an image classifier.",computer-vision
-1950,2020-07-23 00:42:09,GPT-3: A Hitchhiker's Guide,Post to guide your thinking on GPT-3.,natural-language-processing
-1959,2020-07-24 10:00:13,TeachEasy: Web app for Text Summarization & Q/A generation,An intuitive Streamlit based web app for Text Summarization and Question Answer generation so as to reduce the work for School teachers.,natural-language-processing
-1961,2020-07-24 10:38:52,Python Template for All Projects,"A template that gives the batteries required to package code, CI checks, auto build and deploy docs, easy PyPi publishing support and docker files.",mlops
-1964,2020-07-25 02:52:36,MLOps Tutorial Series,How to create an automatic model training & testing setup using GitHub Actions and Continuous Machine Learning (CML).,mlops
-1972,2020-07-27 02:54:19,Evolution of Representations in the Transformer,"The evolution of representations of individual tokens in Transformers trained with different training objectives (MT, LM, MLM - BERT-style).",natural-language-processing
-1975,2020-07-27 14:09:26,Ensemble methods for object detection,"In this repository, we provide the code for ensembling the output of object detection models, and applying test-time augmentation for object detection. This lib",computer-vision
-1976,2020-07-27 14:12:03,Close-Domain fine-tuning for table detection,"In this project, we show the benefits of using models trained on a close domain, using the TableBank dataset, for fine-tuning table detection models. In additio",computer-vision
-1997,2020-07-29 16:13:46,Image Classification by @carrycooldude,Image Classification using TFLite and ImageNet  by  @carrycooldude,computer-vision
-2007,2020-07-30 14:47:39,CLoDSA: A Tool for Augmentation in Computer Vision tasks,"CLoDSA is an open-source image augmentation library for object classification, localization, detection, semantic segmentation and instance segmentation. It supp",computer-vision
-2010,2020-07-30 15:00:43,FrImCla: A framework for image classification,"
-FrImCla is an open-source framework for Image Classification using traditional and deep learning techniques. It supports a wide variety of deep learning and c",computer-vision
-2011,2020-07-30 15:02:04,UFOD: A Unified Framework for Object Detection,UFOD is an open-source framework that enables the training and comparison of object detection models on custom datasets using different underlying frameworks an,computer-vision
-2023,2020-08-01 14:46:19,Why You Should Do NLP Beyond English,7000+ languages are spoken around the world but NLP research has mostly focused on English. This post outlines why you should work on languages other than Eng.,natural-language-processing
-2025,2020-08-01 14:57:11,Haystack — Neural Question Answering At Scale,"🔍 Transformers at scale for question answering & search
-
-",natural-language-processing
-2034,2020-08-03 04:00:29,Finding Similar Documents with Transformers,How transformers can help us distill text documents into points in N-dimensional vector spaces.,natural-language-processing
-2040,2020-08-04 18:00:56,A Barebones Image Retrieval System,This project presents a simple framework to retrieve images similar to a query image.,computer-vision
-2056,2020-08-06 00:30:49,Fast Sentence Embeddings (fse),Fast Sentence Embeddings is a Python library that serves as an addition to Gensim.,natural-language-processing
-2131,2020-08-13 01:39:01,How to Trust Your Deep Learning Code,"We will focus on how to write reusable unit tests, so that you “Don’t repeat yourself”.",mlops
-2137,2020-08-13 02:10:03,Unpopular Opinion - Data Scientists Should Be More End-to-End,I believe data scientists can be more effective by being end-to-end.,mlops
-2172,2020-08-18 04:12:18,Compression of Deep Learning Models for Text: A Survey,"In this survey, we discuss six different types of methods for compression of such models to enable their deployment in real industry NLP projects.",natural-language-processing
-2186,2020-08-18 23:24:41,AI in Medicine and Imaging - Stanford Symposium 2020,Through the AIMI Symposium we hope to address gaps and barriers in the field and catalyze more evidence-based solutions to improve health for all.,computer-vision
-2195,2020-08-20 20:45:52,Streamlit Terran Timeline,A face-recognition timeline generator tool for any kind of video!,computer-vision
-2199,2020-08-21 08:37:20,How to Set Up Continuous Integration for Machine Learning,How to Set Up Continuous Integration for Machine Learning with Github Actions and Neptune: Step by Step Guide.,mlops
-2200,2020-08-21 12:45:54,Bad passwords and the NIST guidelines,"Example project provided by DataCamp. In this project, you will write code that  automatically detects and flags the bad passwords.",natural-language-processing
-2232,2020-08-27 11:00:34,GenRL,GenRL is a PyTorch-First Reinforcement Learning library centered around reproducible and generalizable algorithm implementations.,other
-2246,2020-08-30 06:05:21,Questgen- An NLP library for state-of-the-art Question Generation,"Questgen AI is an opensource, easy to use NLP library for Question generation. It can generate MCQs, Boolean (Yes/No), FAQs and also paraphrase any question.
-",natural-language-processing
-2250,2020-08-31 09:20:55,Text Data Augmentation with MarianMT,Learn how to use machine translation models in Hugging Face Transformers for data augmentation.,natural-language-processing
-2262,2020-09-03 12:10:24,R.U.Stoked,NLP (Sentiment Analysis) project to demonstrate a pipeline of data from the very first stage of data collection through ML model deployment.,natural-language-processing
-2266,2020-09-04 01:42:26,Wav2Lip: Accurately Lip-syncing Videos In The Wild,A Lip Sync Expert Is All You Need for Speech to Lip Generation In the Wild,computer-vision
-2271,2020-09-05 07:10:06,Latest advancements in video streaming with AI,"AI developments in video streaming using Super-resolution, Per-title encoding, P2P",computer-vision
-2289,2020-09-08 04:12:41,ElasticTransformers,Making BERT stretchy. Semantic Elasticsearch with Sentence Transformers.,natural-language-processing
-2310,2020-09-12 12:33:20,Image Super-Resolution,In this project we learn how to train a super-resolution model ESPCN on DIV2K dataset to upscale images using AI by 3x,computer-vision
-2312,2020-09-12 22:33:56,Codequestion,Ask coding questions directly from the terminal.,natural-language-processing
