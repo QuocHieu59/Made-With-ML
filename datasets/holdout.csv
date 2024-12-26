@@ -195,14 +195,3 @@ FrImCla is an open-source framework for Image Classification using traditional a
 2289,2020-09-08 04:12:41,ElasticTransformers,Making BERT stretchy. Semantic Elasticsearch with Sentence Transformers.,natural-language-processing
 2310,2020-09-12 12:33:20,Image Super-Resolution,In this project we learn how to train a super-resolution model ESPCN on DIV2K dataset to upscale images using AI by 3x,computer-vision
 2312,2020-09-12 22:33:56,Codequestion,Ask coding questions directly from the terminal.,natural-language-processing
-2336,2020-09-19 08:40:37,G-SimCLR,TensorFlow implementation of G-SimCLR. ,computer-vision
-2339,2020-09-19 11:17:48,Neural CDEs for Long Time-Series via the Log-ODE Method,NCDEs for Long Time-Series via the Log-ODE Method.,other
-2350,2020-09-22 03:07:29,"Part 1: Deep Representations, a way towards neural style transfer",A top down approach to conceiving neural style transfer,computer-vision
-2366,2020-09-25 02:26:00,Help-Me-Read: Text Summarization using Flask and HuggingFace.,"Text summarization, translation and Questions Answers generation using HuggingFace and deployed using Flask, Streamlit. Detailed guide on github. ",natural-language-processing
-2367,2020-09-25 07:39:43,Interactive Analysis of Sentence Embeddings,Learn how to interactively explore sentence embedding and labels in Tensorflow Embedding Projector.,natural-language-processing
-2390,2020-09-28 05:46:03,mini-pokedex end to end tutorial  -  Gotta classify 'em all!,"Build a Pokemon image classifier to classify the awesome starters Pikachu, Charmander, Squirtle, and Bulbasaur.",computer-vision
-2394,2020-09-28 22:46:36,Why Data Quality is Key to Successful ML Ops,A look at ML Ops and highlight how and why data quality is key to ML Ops workflows.,mlops
-2403,2020-09-30 22:15:07,Easy Data Augmentation (EDA),Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks,natural-language-processing
-2413,2020-10-01 23:50:04,Keeping Data Pipelines healthy w/ Great Expectations GH Actions,"We show you how you can use GitHub Actions together with the open source project Great Expectations to automatically test, document, and profile data pipelines.",mlops
-2428,2020-10-05 02:09:23,Efficient Transformers: A Survey,"Characterizes a large and thoughtful selection of recent efficiency-flavored ""X-former"" models.",natural-language-processing
-2429,2020-10-05 02:16:34,Meta-learning for Few-shot Natural Language Processing: A Survey,"Clear definitions, progress summary and some common datasets of applying meta-learning to few-shot NLP.",natural-language-processing
