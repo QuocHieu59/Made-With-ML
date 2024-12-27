@@ -42,9 +42,9 @@ jobs:
       # 7. Chạy test cho dữ liệu
       - name: Test Data
         run: |
-          pytest --dataset-loc=$env:DATASET_LOC tests/data --verbose --disable-warnings
+          python -m pytest --dataset-loc=$env:DATASET_LOC tests/data --verbose --disable-warnings
 
       # 8. Chạy test cho mô hình
       - name: Test Model
         run: |
-          pytest tests/model --verbose --disable-warnings
+          python -m pytest tests/model --verbose --disable-warnings
