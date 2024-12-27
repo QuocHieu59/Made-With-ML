@@ -17,9 +17,10 @@ try:
 except OSError:
     EFS_DIR = Path(ROOT_DIR, "efs")
     Path(EFS_DIR).mkdir(parents=True, exist_ok=True)
-print(EFS_DIR)
-print(ROOT_DIR)
+
 file_path = EFS_DIR / "best_trial_path.txt"
 with open(file_path , "r") as file:
     saved_path = file.read()
+print(EFS_DIR)
+print(ROOT_DIR)
 print(saved_path)

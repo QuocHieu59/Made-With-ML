@@ -12,6 +12,8 @@ LOGS_DIR = Path(ROOT_DIR, "logs")
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
 EFS_DIR = Path(f"/efs/shared_storage/madewithml/{os.environ.get('GITHUB_USERNAME', '')}")
 EFS_DIR = ROOT_DIR / EFS_DIR.relative_to(EFS_DIR.anchor)
+#print(LOGS_DIR)
+#print(EFS_DIR)
 try:
     Path(EFS_DIR).mkdir(parents=True, exist_ok=True)
 except OSError:

@@ -48,15 +48,9 @@ jobs:
       # 7. Chạy test cho dữ liệu
       - name: Test Data
         run: |
-          $env:PYTHONPATH = "$env:PYTHONPATH;$PWD"
-          $env:EXPERIMENT_NAME = "llm"
-          $env:DATASET_LOC = "https://raw.githubusercontent.com/QuocHieu59/Made-With-ML/main/datasets/dataset.csv"
-          pytest --dataset-loc=%DATASET_LOC% tests/data --verbose --disable-warnings
+          pytest --dataset-loc=$env:DATASET_LOC tests/data --verbose --disable-warnings
 
       # 8. Chạy test cho mô hình
       - name: Test Model
         run: |
-          $env:PYTHONPATH = "$env:PYTHONPATH;$PWD"
-          $env:EXPERIMENT_NAME = "llm"
-          $env:DATASET_LOC = "https://raw.githubusercontent.com/QuocHieu59/Made-With-ML/main/datasets/dataset.csv"
           pytest tests/model --verbose --disable-warnings
