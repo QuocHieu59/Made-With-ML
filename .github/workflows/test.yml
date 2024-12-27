@@ -51,6 +51,8 @@ jobs:
           python -m pytest tests/model --verbose --disable-warnings
 
       - name: Train Model
+        env:
+          GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
         run: |
           $env:PYTHONPATH = "$env:PYTHONPATH;$PWD"
           $env:EXPERIMENT_NAME="llm"
@@ -58,6 +60,8 @@ jobs:
           python madewithml/tune.py --experiment-name $env:EXPERIMENT_NAME --dataset-loc $env:DATASET_LOC --num-runs 2 --num-workers 1 --cpu-per-worker 2 --gpu-per-worker 0 --num-epochs 10 --batch-size 32
 
       - name: Evaluation Model
+        env:
+          GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
         run: |
           $env:PYTHONPATH = "$env:PYTHONPATH;$PWD"
           $env:EXPERIMENT_NAME="llm"
