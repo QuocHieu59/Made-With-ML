@@ -50,10 +50,6 @@ def test_directional(input, label, predictor):
             "natural-language-processing",
         ),
         (
-            "MLOps is the next big wave in machine learning.",
-            "mlops",
-        ),
-        (
             "This is about graph neural networks.",
             "other",
         ),

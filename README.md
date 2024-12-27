@@ -57,6 +57,18 @@ pre-commit autoupdate
 **Note**: Change the `--num-workers`, `--cpu-per-worker`, and `--gpu-per-worker` input argument values below based on your system's resources.
 ```
 
+## Notebook
+
+Start by exploring the notebooks/madewithml.ipynb to interactively walkthrough the core machine learning workloads.
+
+<div align="center">
+  <img src="https://madewithml.com/static/images/mlops/systems-design/workloads.png">
+</div>
+  ```bash
+  # Start notebook
+  jupyter lab notebooks/madewithml.ipynb
+```
+
 ### Tuning
 
 ```bash
@@ -119,40 +131,4 @@ python -m pytest tests/code --verbose --disable-warnings >test_results/pytest_re
 
 Using GitHub Actions!
 
-<div align="center">
-  <img src="https://madewithml.com/static/images/mlops/cicd/cicd.png">
-</div>
-
-1. Create a new github branch to save our changes to and execute CI/CD workloads:
-
-```bash
-git remote set-url origin https://github.com/$GITHUB_USERNAME/Made-With-ML.git  # <-- CHANGE THIS to your username
-git checkout -b dev
-```
-
-2. We'll start by adding the necessary credentials to the [`/settings/secrets/actions`](https://github.com/GokuMohandas/Made-With-ML/settings/secrets/actions) page of our GitHub repository.
-
-```bash
-export ANYSCALE_HOST=https://console.anyscale.com
-export ANYSCALE_CLI_TOKEN=$YOUR_CLI_TOKEN  # retrieved from https://console.anyscale.com/o/madewithml/credentials
-```
-
-3. Now we can make changes to our code (not on `main` branch) and push them to GitHub. But in order to push our code to GitHub, we'll need to first authenticate with our credentials before pushing to our repository:
-
-```bash
-git config --global user.name $GITHUB_USERNAME  # <-- CHANGE THIS to your username
-git config --global user.email you@example.com  # <-- CHANGE THIS to your email
-git add .
-git commit -m ""  # <-- CHANGE THIS to your message
-git push origin dev
-```
-
-Now you will be prompted to enter your username and password (personal access token). Follow these steps to get personal access token: [New GitHub personal access token](https://github.com/settings/tokens/new) → Add a name → Toggle `repo` and `workflow` → Click `Generate token` (scroll down) → Copy the token and paste it when prompted for your password.
-
-4. Now we can start a PR from this branch to our `main` branch and this will trigger the [workloads workflow](/.github/workflows/workloads.yaml). If the workflow (Anyscale Jobs) succeeds, this will produce comments with the training and evaluation results directly on the PR.
-
-<div align="center">
-  <img src="https://madewithml.com/static/images/mlops/cicd/comments.png">
-</div>
-
-5. If we like the results, we can merge the PR into the `main` branch. This will trigger the [serve workflow](/.github/workflows/serve.yaml) which will rollout our new service to production!
+Test code when push change to github: \.github\workflows\test.yml
