@@ -4,7 +4,7 @@ stores/
 mlflow/
 results/
 workspaces/
-.github/
+
 efs/
 
 # VSCode
