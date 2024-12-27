@@ -31,18 +31,12 @@ jobs:
           pre-commit install
           pre-commit autoupdate
 
-      # 5. Thiết lập thư mục lưu trữ EFS
-      - name: Set up EFS storage directory
-        run: |
-          mkdir C:\efs\shared_storage\madewithml\${{ secrets.GITHUB_USERNAME }}
-        env:
-          GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
       # 6. Chạy test cho mã code
       - name: Test Code
         run: |
           $env:PYTHONPATH = "$env:PYTHONPATH;$PWD"
           $env:EXPERIMENT_NAME = "llm"
-          $env:DATASET_LOC = "https://raw.githubusercontent.com/QuocHieu59/Made-With-ML/main/datasets/dataset.csv"
+          $env:DATASET_LOC = "https://raw.githubusercontent.com/QuocHieu59/Made-With-ML/master/datasets/dataset.csv"
           python -m pytest tests/code --verbose --disable-warnings
 
       # 7. Chạy test cho dữ liệu
