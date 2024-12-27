@@ -49,3 +49,15 @@ jobs:
       - name: Test Model
         run: |
           python -m pytest tests/model --verbose --disable-warnings
+
+      - name: Train Model
+        run: |
+          $env:EXPERIMENT_NAME="llm"
+          $env:DATASET_LOC="https://raw.githubusercontent.com/QuocHieu59/Made-With-ML/master/datasets/dataset.csv"
+          python madewithml/tune.py --experiment-name $env:EXPERIMENT_NAME --dataset-loc $env:DATASET_LOC --num-runs 2 --num-workers 1 --cpu-per-worker 2 --gpu-per-worker 0 --num-epochs 10 --batch-size 32
+
+      - name: Evaluation Model
+        run: |
+          $env:EXPERIMENT_NAME="llm"
+          $env:HOLDOUT_LOC="https://raw.githubusercontent.com/QuocHieu59/Made-With-ML/master/datasets/holdout.csv"
+          python madewithml/evaluate.py --dataset-loc $env:HOLDOUT_LOC
